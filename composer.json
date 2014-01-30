@@ -1,0 +1,38 @@
+{
+    "name": "ncsuwebdev/base-otf-app",
+    "type": "project",
+    "description": "Base app for creating an OTF app",
+    "keywords": ["ncstate","ncsu"],
+    "homepage": "http://github.com/ncsuwebdev/base-otf-app",
+    "authors": [
+        {
+            "name": "Jason Austin",
+            "email": "jfaustin@ncsu.edu",
+            "homepage": "http://ot.ncsu.edu",
+            "role": "Developer"
+        },
+        {
+            "name": "Garrison Locke",
+            "email": "gplocke@ncsu.edu",
+            "homepage": "http://ot.ncsu.edu",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",        
+        "ncsuwebdev/otframework": "3.0.14"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Ot_Composer_Installer::setupSymlinks",
+            "Ot_Composer_Installer::setupWritableDirectories",
+            "Ot_Composer_Installer::copyApplicationIni",
+            "Ot_Composer_Installer::copyDbMigrations"
+        ],
+        "post-update-cmd": [
+            "Ot_Composer_Installer::setupSymlinks",
+            "Ot_Composer_Installer::setupWritableDirectories"
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+.ot-lp-app {
+    float: left;
+    text-align: center;
+    width: 235px;
+}
+
+/* ALTERNATIVE APPLICATION STATUS
+.ot-lp-app2 {
+    background-color: red;
+    border-radius: 5px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    width: 235px;
+}
+*/
+
+    .ot-lp-app-graphic {
+        display: block;
+        height: 128px;
+        margin: 0 auto;
+        width: 128px;
+    }
+
+    .ot-lp-app-title {
+        font-size: 1.3em;
+        line-height: 1.3em;
+        margin: 0;
+    }
+    
+    .ot-lp-app-status {
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 0.8em;
+        margin: 5px 0 0;
+        padding: 5px 10px;
+        text-transform: uppercase;
+    }
+    
+        .ot-lp-app.active .ot-lp-app-status {
+            background-color: green;
+            color: #fff;
+        }
+        
+        .ot-lp-app.maint .ot-lp-app-status {
+            background-color: yellow;
+            color: #000;
+        }
+        
+        .ot-lp-app.down .ot-lp-app-status {
+            background-color: red;
+            color: #fff;
+        }
