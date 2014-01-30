@@ -1,0 +1,24 @@
+.noItems {
+    line-height: 200px;
+    text-align: center;
+}
+
+
+form select, form input[type='text'] {
+    width: 210px;
+}
+
+div.criteria {
+    width: 250px;
+    float: left;
+}
+
+div.submit {
+    width: 100px;
+    float: left;
+    margin-top: 18px;
+}
+
+#itemFooter {
+    text-align: center;
+}

@@ -1,0 +1,208 @@
+#ui-datepicker-div table tr td {
+    padding: 0;
+    margin: 0;    
+}
+
+table.list {
+    margin-bottom: 5px;
+    border: 1px solid #6e6e6e;
+    border-collapse: collapse;
+}
+
+table.list th {
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    height: 18px;
+    border: 1px solid #C0C0C0;
+}
+
+table.list td {
+    border: 1px solid #C0C0C0;
+    height: 25px;
+    padding: 3px;
+}
+
+table.list td.noResults {
+    text-align: center;
+    height: 35px;
+    background-color: #FFFFFF;
+    width: 500px;
+}
+
+table.form {
+    display: block;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+table.form td {
+    padding: 5px 7px 5px 7px;
+    vertical-align: top;
+    border: 0px;
+}
+
+table.form label {
+    font-weight: bold;
+}
+
+.sortable th {
+    cursor: pointer;
+}
+
+div.elm {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+div.elm label input {
+	margin-right: 0.5em;
+}
+
+span.required {
+    color: #C00;
+}
+
+div.maintenance {
+    font-size: 1.3em;
+    padding: 7px;
+    border: 1px solid #000000;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div.maintenance a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+div.maintenanceModeOn {
+    background-color: #DF2929;
+}
+
+div.maintenanceModeOff {
+    background-color: #44DF29;
+}
+
+/** jQueryUi styles **/
+div#systemMessages {
+    margin: 15px 0 15px 0;
+    padding: 5px;
+}
+
+div.ui-state-error, div.ui-state-highlight {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+div.ui-state-error span.ui-icon, div.ui-state-highlight span.ui-icon {
+    float: left;
+    margin-right: .3em;
+}
+
+a.linkButtonNoIcon {
+    padding: .4em 1em .4em 1em;
+    text-decoration: none;
+    position: relative;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+a.linkButtonNoText {
+    padding: .2em 1em .2em 1em;
+    text-decoration: none;
+    position: relative;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+a.linkButtonNoText span.ui-icon {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .35em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+a.linkButton {
+    padding: .4em 1em .4em 20px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 5px;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+a.linkButton span.ui-icon {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .2em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+/** End jQueryUi styles **/
+
+div#loading {
+    background-image: url(../../../images/ot/ajax-loader.gif);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+    display: none;
+}
+
+div#translationInstructions {
+    width: 550px;
+    margin-bottom: 20px;
+}
+
+div.systemMessageCloseButton {
+    text-align: right;
+    width: 30px;
+    float: right;
+}
+
+.access {
+    background: #52b152; /* Old browsers */
+    background: -moz-linear-gradient(top,  #52b152 4%, #008a00 48%, #005700 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(4%,#52b152), color-stop(48%,#008a00), color-stop(99%,#005700)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #52b152 4%,#008a00 48%,#005700 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #52b152 4%,#008a00 48%,#005700 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #52b152 4%,#008a00 48%,#005700 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  #52b152 4%,#008a00 48%,#005700 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b152', endColorstr='#005700',GradientType=0 ); /* IE6-9 */
+    color: #FFF;
+    font-weight: normal;
+    text-align: center;
+}
+
+.noAccess {
+    background: #cc0000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cc0000 0%, #8f0222 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0000), color-stop(100%,#8f0222)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cc0000 0%,#8f0222 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cc0000 0%,#8f0222 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cc0000 0%,#8f0222 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #cc0000 0%,#8f0222 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#8f0222',GradientType=0 ); /* IE6-9 */    
+    color: #FFF;
+    font-weight: normal;
+    text-align: center;
+}
+
+.someAccess {
+    background: #f1e767; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+    color: #000;
+    font-weight: normal;
+    text-align: center;    
+}

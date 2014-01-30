@@ -1,0 +1,146 @@
+<?php echo $this->doctype('XHTML1_STRICT'); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<?php
+$this->headMeta()->appendName('keywords', $this->configVar('metaKeywords'))
+                 ->appendHttpEquiv('Content-Type', 'text/html; charset=UTF-8')
+                 ->appendHttpEquiv('Content-Language', 'en-US');
+
+echo $this->headMeta() . "\n";
+$this->headTitle($this->configVar('appTitle'))
+     ->headTitle(strip_tags($this->title))
+     ->headTitle()->setSeparator(' - ');
+
+echo "\n";
+
+$brandingBar = new Ncstate_Brand_Bar(array(
+    'secure' => true,
+    'color'  => 'red_on_white'
+));
+
+echo $this->headTitle() . "\n\n";
+
+//add the NCSU branding css to the headlink
+$this->headLink()->appendStylesheet($brandingBar->getStylesheetUrl());
+
+echo $this->headLink() . "\n\n";
+
+echo $this->headScript() . "\n";
+echo "\n";
+
+
+?>
+</head>
+
+<body>
+<input type="hidden" name="baseUrl" id="baseUrl" value="<?php echo $this->baseUrl(); ?>" />
+
+<!-- START NCSU Branding Utility Bar -->
+<?php
+echo $brandingBar->getIframeHtml();
+?>
+<!-- END NCSU Branding Utility Bar -->
+
+
+    <div class="container" id="header">
+        <div class="row">
+            <div id="site-title" class="span8">
+                <h1><?php echo $this->configVar('appTitle'); ?></h1>
+            </div>
+            <div id="site-auth" class="span4">
+                <div id="auth-wrapper">
+                    <?php echo $this->render('auth.phtml'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                      <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                          <?php echo $this->navigation()->menu()->setOnlyActiveBranch(false)->setRenderParents(false)->setPartial('bootstrap-nav.phtml'); ?>
+                        </div><!--/.nav-collapse -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="content">
+        <?php
+        $_messageLevelMap = array(
+            'error'   => 'error',
+            'info'    => 'info',
+            'warning' => 'block',
+            'success' => 'success',
+        );
+        ?>
+        <?php foreach($this->messages() as $m): ?>
+            <div class="alert alert-<?php echo (isset($_messageLevelMap[$m['level']])) ? $_messageLevelMap[$m['level']] : 'info'; ?>"><?php echo $this->translate($m['message']); ?></div>
+        <?php endforeach; ?>
+        
+        <?php if ($this->title != ''): ?>
+            <h3 id="pageTitle"><?php echo $this->title; ?></h3>
+        <?php endif; ?>
+
+          <?php echo $this->layout()->content; ?>
+
+
+    </div> <!-- /container -->
+    <div class="container">
+        
+    </div>
+
+    <div class="container" id="footer">
+        <div class="row">
+            <div class="span12" id="footer-nav">
+                <span>
+                    <?php echo $this->configVar('appTitle'); ?> - &copy; <?php echo date('Y'); ?>
+                    <?php echo $this->overrideTranslation()->editLink($this->translate('theme-layouts-layout:editText')); ?>
+                </span>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row" id="footer-bottom">
+            <div class="span4" id="footer-logo">
+
+            </div>
+            <div class="span8" id="footer-address">
+                North Carolina State University &nbsp; Raleigh, NC 27695 &nbsp; Phone: (919) 515-2011
+            </div>
+        </div>
+    </div>
+
+    <div id="logoutModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="logoutModalLabel">Logout?</h3>
+        </div>
+        <div class="modal-body">
+            <p><?php echo $this->translate('theme-scripts-auth:sureLogOut'); ?></p>
+        </div>
+        <div class="modal-footer">
+            <form style="margin: 0;" method="post" action="<?php echo $this->url(array('action' => 'logout'), 'login', true); ?>">
+                <input type="submit" name="submit" value="Logout" class="btn btn-danger" />
+                <input type="button" name="cancel" value="Cancel" class="btn" data-dismiss="modal" />
+            </form>
+        </div>
+    </div>
+    
+    <?php echo $this->overrideTranslation()->editModal(); ?>
+</body>
+</html>
+

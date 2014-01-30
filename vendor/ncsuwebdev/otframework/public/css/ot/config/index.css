@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0px 10px 0px 00px;
+}
+
+fieldset {
+    border: 1px solid #DDDDDD;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 30px;
+}
+
+div.zend_form label.optional, div.zend_form label.required {
+    white-space:normal;
+    height: auto;
+}
+
+label.field-label {
+    width: 300px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.field-description {
+    width: 300px;
+    color: #666;
+}
+
+.fields {
+    clear: both;
+    display: inline;
+    width: 600px;
+    float: right;
+    margin-left: 10px;
+}
+
+.fields * {
+    display: inline;
+}
+
+.field-group {
+    clear: both;
+    border-bottom: 1px dashed #CCC;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 900px;
+    
+}
+
+.select-label {
+    display: block;
+    width: 250px;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.select-control select {
+    margin: 5px;
+}
+
+fieldset label {
+    font-weight: bold;
+}
+
+.select-header {
+    border: 1px solid #CCC;
+    
+    padding: 10px;
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    
+}
+
+.sublabel {
+    padding-right: 10px;
+    display: block;
+    float: left;
+    height: 19px;
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+.subelement {
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+}

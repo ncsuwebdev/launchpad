@@ -1,0 +1,48 @@
+ul#adapterList {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#adapterList li.adapter {
+    padding: 5px;
+    margin: 0 0 20px 0;
+    list-style: none;
+}
+
+ul#adapterList div.status {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 64px;
+}
+
+ul#adapterList div.status:hover {
+    cursor: ns-resize;
+}
+
+ul#adapterList div.status.enabled {
+    background-image: url(../../../images/ot/grant.png);
+}
+
+ul#adapterList div.status.disabled {
+    background-image: url(../../../images/ot/deny.png);
+}
+
+ul#adapterList h3.name {
+    margin-top: 0px;
+}
+
+ul#adapterList div.description {
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+ul#adapterList div.actions {
+    text-align: right;
+    margin: 10px 10px auto auto;
+}
+
+#message {
+    margin-bottom: 20px;
+    height: 30px;
+}

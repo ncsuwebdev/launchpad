@@ -1,0 +1,40 @@
+<a href="<?php echo $this->url(array('controller' => 'trigger', 'action' => 'details', 'eventKey' => $this->triggerEvent->getKey()), 'ot', true); ?>"><i class="icon icon-arrow-left"></i> <?php echo $this->translate("ot-trigger-add:linkBack", $this->triggerEvent->getName()); ?></a><br /><br />
+
+<p>
+<?php if (!$this->clonedTriggerName) : ?>
+    <?php echo $this->translate("ot-trigger-add:header"); ?>
+<?php else : ?>
+    <?php echo $this->translate("ot-trigger-add:cloneHeader", array('triggerName' => $this->clonedTriggerName)); ?>
+<?php endif; ?>
+</p>
+<br />
+
+<div class="row">
+    <div class="span8">        
+        <?php echo $this->form; ?>
+    </div>
+    <div class="span4">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th><?php echo $this->translate("ot-trigger-table:variable"); ?></th>
+                    <th><?php echo $this->translate("ot-trigger-table:description"); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if (count($this->triggerEvent->getOptions()) > 0) : ?>
+                    <?php foreach ($this->triggerEvent->getOptions() as $key => $variable) : ?>
+                    <tr>
+                        <td><code>[[<?php echo $key; ?>]]</code></td>
+                        <td><?php echo $variable; ?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                <tr>
+                    <td colspan="2"><?php echo $this->translate("ot-trigger-add:noVariables"); ?></td>
+                </tr>
+                <?php endif; ?>
+            </tbody>
+        </table>
+    </div>
+</div>

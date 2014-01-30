@@ -12,7 +12,7 @@ application.ini
 /public/scripts/ot
 /public/themes/ot/
 /public/themes/ot
-/vendor/
+#/vendor/
 /composer.lock
 /public/images/ot/
 /public/images/ot

@@ -1,0 +1,37 @@
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+@media (max-width: 980px) {
+    
+    /* Enable use of floated navbar text */
+    .navbar-text.pull-right {
+        float: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #FFFFFF;
+    min-height: 400px;
+}
+
+#footer {
+    padding-top: 10px;
+    height: 60px;
+    color: #999999;
+    font-size: 12px;
+}
+
+a#overrideTranslationLink {
+    float: right;
+}

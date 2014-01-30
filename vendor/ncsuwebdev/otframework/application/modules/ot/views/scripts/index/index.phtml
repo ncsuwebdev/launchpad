@@ -1,0 +1,32 @@
+<?php echo $this->translate("ot-index-index:header"); ?>
+<br /><br />
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th><?php echo $this->translate("ot-index-index:library"); ?></th>
+            <th><?php echo $this->translate("ot-index-index:version"); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> 
+            <td style="text-align: left"><?php echo $this->appTitle; ?></td>
+            <td style="text-align: center"><?php echo $this->appVersion; ?></td>
+        </tr>
+        <tr> 
+            <td style="text-align: left"><?php echo $this->translate("ot-index-index:ot"); ?></td>
+            <td style="text-align: center"><?php echo $this->otVersion; ?></td>
+        </tr>
+        <tr> 
+            <td style="text-align: left"><?php echo $this->translate("ot-index-index:zend"); ?></td>
+            <td style="text-align: center"><?php echo $this->zfVersion; ?></td>
+        </tr>
+        <tr> 
+            <td style="text-align: left"><?php echo $this->translate("ot-index-index:jQuery"); ?></td>
+            <td style="text-align: center"><span id="jQueryVersion"></span></td>
+        </tr>
+        <tr> 
+            <td style="text-align: left"><?php echo $this->translate("ot-index-index:jQueryUi"); ?></td>
+            <td style="text-align: center"><span id="jQueryUiVersion"></span></td>
+        </tr>
+    </tbody>
+</table>

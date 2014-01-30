@@ -1,0 +1,9 @@
+application.ini
+.DS_Store
+.DS_Store?
+
+/nbproject/private/
+/nbproject/
+/vendor/
+/public/css/ncsubootstrap
+/overrides/maintenanceMode

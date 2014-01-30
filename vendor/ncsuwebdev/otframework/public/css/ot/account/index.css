@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+.apiapp .name {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.apiapp .name .website {
+    color: #AAAAAA;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.apiapp .name .website a {
+    color: #AAAAAA;
+}
+
+.apiapp .description {
+    color: #333;
+    margin: 10px 0px;
+}
+
+.access {
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #CCC;
+    padding: 2px;
+    margin: 10px 0px;
+}
+
+.key {
+    margin-bottom: 20px;
+    font-family: Courier;
+}
+
+.actions {
+    text-align: right;
+}

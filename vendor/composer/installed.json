@@ -1,0 +1,242 @@
+[
+    {
+        "name": "emagister/zend-form-decorators-bootstrap",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Emagister/zend-form-decorators-bootstrap.git",
+            "reference": "323abe0afba89e898d7c1471d606411800277f57"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Emagister/zend-form-decorators-bootstrap/zipball/323abe0afba89e898d7c1471d606411800277f57",
+            "reference": "323abe0afba89e898d7c1471d606411800277f57",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2013-07-12 08:51:54",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Twitter_": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            ""
+        ],
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "EmagisterTech",
+                "email": "php@emagister.com",
+                "homepage": "http://engineering.emagister.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Zend_Form decorators for Twitter's Bootstrap UI",
+        "homepage": "https://emagister.github.com/zend-form-decorators-bootstrap",
+        "keywords": [
+            "bootstrap",
+            "twitter",
+            "twitter bootstrap",
+            "zend",
+            "zend form",
+            "zend form decorators"
+        ]
+    },
+    {
+        "name": "ncsuwebdev/ncsubootstrap",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ncsuwebdev/ncsubootstrap.git",
+            "reference": "7dfb3df664adc5262ed5c12da5aaebceca1afc97"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ncsuwebdev/ncsubootstrap/zipball/7dfb3df664adc5262ed5c12da5aaebceca1afc97",
+            "reference": "7dfb3df664adc5262ed5c12da5aaebceca1afc97",
+            "shasum": ""
+        },
+        "time": "2013-05-08 18:03:25",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Jason Austin",
+                "email": "jfaustin@ncsu.edu",
+                "homepage": "http://ot.ncsu.edu",
+                "role": "Developer"
+            }
+        ],
+        "description": "An NCSU-brand override for Twitter Bootstrap",
+        "homepage": "http://github.com/ncsuwebdev/ncsubootstrap",
+        "keywords": [
+            "ncstate",
+            "ncsu"
+        ]
+    },
+    {
+        "name": "bombayworks/zendframework1",
+        "version": "v1.12.3",
+        "version_normalized": "1.12.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bombayworks/zendframework1.git",
+            "reference": "702edf6494c420c2066c694286e1a9ec07efee72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bombayworks/zendframework1/zipball/702edf6494c420c2066c694286e1a9ec07efee72",
+            "reference": "702edf6494c420c2066c694286e1a9ec07efee72",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.11"
+        },
+        "time": "2013-03-13 17:09:28",
+        "bin": [
+            "bin/zf.sh",
+            "bin/zf.php"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-trunk": "1.12.x-dev",
+                "dev-release-1.0": "1.0.x-dev",
+                "dev-release-1.5": "1.5.x-dev",
+                "dev-release-1.6": "1.6.x-dev",
+                "dev-release-1.7": "1.7.x-dev",
+                "dev-release-1.8": "1.8.x-dev",
+                "dev-release-1.9": "1.9.x-dev",
+                "dev-release-1.10": "1.10.x-dev",
+                "dev-release-1.11": "1.11.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Zend_": "library/",
+                "ZendX_": "extras/library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            "library/",
+            "extras/library/"
+        ],
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Zend Framework 1",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "ZF1",
+            "framework"
+        ]
+    },
+    {
+        "name": "ncsuwebdev/php-ncstate",
+        "version": "1.0.9",
+        "version_normalized": "1.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ncsuwebdev/PHP-Ncstate.git",
+            "reference": "e0ab9d570693a6ab9b73088dbc56900b79b2bccd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ncsuwebdev/PHP-Ncstate/zipball/e0ab9d570693a6ab9b73088dbc56900b79b2bccd",
+            "reference": "e0ab9d570693a6ab9b73088dbc56900b79b2bccd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-07-25 18:55:30",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Ncstate": "/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Jason Austin",
+                "email": "jfaustin@ncsu.edu",
+                "homepage": "http://ot.ncsu.edu",
+                "role": "Developer"
+            }
+        ],
+        "description": "Utility library for NC State",
+        "homepage": "http://github.com/ncsuwebdev/PHP-Ncstate",
+        "keywords": [
+            "ncstate",
+            "ncsu"
+        ]
+    },
+    {
+        "name": "ncsuwebdev/otframework",
+        "version": "3.0.14",
+        "version_normalized": "3.0.14.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ncsuwebdev/otframework.git",
+            "reference": "2a079a77aba9c25bb21b46451466d1447fdb0d15"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ncsuwebdev/otframework/zipball/2a079a77aba9c25bb21b46451466d1447fdb0d15",
+            "reference": "2a079a77aba9c25bb21b46451466d1447fdb0d15",
+            "shasum": ""
+        },
+        "require": {
+            "bombayworks/zendframework1": "1.12.3",
+            "emagister/zend-form-decorators-bootstrap": "dev-master",
+            "ncsuwebdev/ncsubootstrap": "1.0.x",
+            "ncsuwebdev/php-ncstate": "1.0.x",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-07-31 17:47:31",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Ot": "library",
+                "Oauth": "library"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Jason Austin",
+                "email": "jfaustin@ncsu.edu",
+                "homepage": "http://ot.ncsu.edu",
+                "role": "Developer"
+            },
+            {
+                "name": "Garrison Locke",
+                "email": "gplocke@ncsu.edu",
+                "homepage": "http://ot.ncsu.edu",
+                "role": "Developer"
+            }
+        ],
+        "description": "Base application framework",
+        "homepage": "http://github.com/ncsuwebdev/otframework",
+        "keywords": [
+            "ncstate",
+            "ncsu"
+        ]
+    }
+]

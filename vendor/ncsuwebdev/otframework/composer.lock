@@ -1,0 +1,204 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "2e74742c89bbbf1fee400481c92acc3b",
+    "packages": [
+        {
+            "name": "bombayworks/zendframework1",
+            "version": "v1.12.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bombayworks/zendframework1.git",
+                "reference": "v1.12.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bombayworks/zendframework1/zipball/v1.12.3",
+                "reference": "v1.12.3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.11"
+            },
+            "bin": [
+                "bin/zf.sh",
+                "bin/zf.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-trunk": "1.12.x-dev",
+                    "dev-release-1.0": "1.0.x-dev",
+                    "dev-release-1.5": "1.5.x-dev",
+                    "dev-release-1.6": "1.6.x-dev",
+                    "dev-release-1.7": "1.7.x-dev",
+                    "dev-release-1.8": "1.8.x-dev",
+                    "dev-release-1.9": "1.9.x-dev",
+                    "dev-release-1.10": "1.10.x-dev",
+                    "dev-release-1.11": "1.11.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend_": "library/",
+                    "ZendX_": "extras/library/"
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "include-path": [
+                "library/",
+                "extras/library/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Zend Framework 1",
+            "homepage": "http://framework.zend.com/",
+            "keywords": [
+                "ZF1",
+                "framework"
+            ],
+            "time": "2013-03-13 17:09:28"
+        },
+        {
+            "name": "emagister/zend-form-decorators-bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Emagister/zend-form-decorators-bootstrap.git",
+                "reference": "323abe0afba89e898d7c1471d606411800277f57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Emagister/zend-form-decorators-bootstrap/zipball/323abe0afba89e898d7c1471d606411800277f57",
+                "reference": "323abe0afba89e898d7c1471d606411800277f57",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Twitter_": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EmagisterTech",
+                    "email": "php@emagister.com",
+                    "homepage": "http://engineering.emagister.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Zend_Form decorators for Twitter's Bootstrap UI",
+            "homepage": "https://emagister.github.com/zend-form-decorators-bootstrap",
+            "keywords": [
+                "bootstrap",
+                "twitter",
+                "twitter bootstrap",
+                "zend",
+                "zend form",
+                "zend form decorators"
+            ],
+            "time": "2013-07-12 08:51:54"
+        },
+        {
+            "name": "ncsuwebdev/ncsubootstrap",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ncsuwebdev/ncsubootstrap.git",
+                "reference": "1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ncsuwebdev/ncsubootstrap/zipball/1.0.2",
+                "reference": "1.0.2",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jason Austin",
+                    "email": "jfaustin@ncsu.edu",
+                    "homepage": "http://ot.ncsu.edu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An NCSU-brand override for Twitter Bootstrap",
+            "homepage": "http://github.com/ncsuwebdev/ncsubootstrap",
+            "keywords": [
+                "ncstate",
+                "ncsu"
+            ],
+            "time": "2013-05-08 18:03:25"
+        },
+        {
+            "name": "ncsuwebdev/php-ncstate",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ncsuwebdev/PHP-Ncstate.git",
+                "reference": "1.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ncsuwebdev/PHP-Ncstate/zipball/1.0.9",
+                "reference": "1.0.9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Ncstate": "/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jason Austin",
+                    "email": "jfaustin@ncsu.edu",
+                    "homepage": "http://ot.ncsu.edu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Utility library for NC State",
+            "homepage": "http://github.com/ncsuwebdev/PHP-Ncstate",
+            "keywords": [
+                "ncstate",
+                "ncsu"
+            ],
+            "time": "2013-07-25 18:55:30"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "emagister/zend-form-decorators-bootstrap": 20
+    },
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": [
+
+    ]
+}

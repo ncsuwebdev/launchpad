@@ -1,0 +1,53 @@
+.job div.status {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 64px;
+}
+
+.job div.status.enabled {
+    background-image: url(../../../images/ot/grant.png);
+}
+
+.job div.status.disabled {
+    background-image: url(../../../images/ot/deny.png);
+}
+
+.job h3.name {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.job div.description {
+    margin-bottom: 10px;
+}
+
+.job div.actions {
+    text-align: right;
+    margin: 10px 10px auto auto;
+}
+
+div.job {
+    margin-bottom: 20px;
+}
+
+.job div.schedule {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9em;
+}
+
+#alertBox {
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    width: 97%;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    font-weight: bold;
+    background-color: #66EE00;
+}
+
+#alertWrapper {
+    height: 30px;
+}

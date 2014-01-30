@@ -1,0 +1,45 @@
+<?php if (!$this->guestHasAccess) : ?>
+    <div class="alert alert-warning">
+        <?php echo $this->translate('ot-acl-index:defaultRoleNeedsAccess', $this->defaultRole->name); ?>
+    </div>
+<?php endif; ?>
+
+<?php echo $this->translate('ot-acl-index:header'); ?>
+<br /><br />
+
+<?php if ($this->acl['add']): ?>
+<a href="<?php echo $this->url(array('controller' => 'acl', 'action' => 'add'), 'ot', true); ?>" class="btn btn-success"><i class="icon-white icon-plus"></i> <?php echo $this->translate('ot-acl-index:linkAdd'); ?></a>
+<br /><br />
+<?php endif; ?>
+
+
+<?php if (count($this->roles) > 0): ?>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th class="span5"><?php echo $this->translate('ot-acl-index:table:roleName'); ?></th>
+            <th><?php echo $this->translate('ot-acl-index:table:inheritedFrom'); ?></th> 
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->roles as $r) : ?>
+    <tr>
+        <td>
+            <?php if ($this->acl['details']): ?>
+            <a href="<?php echo $this->url(array('controller' => 'acl', 'action' => 'details', 'roleId' => $r['roleId']), 'ot', true); ?>">
+            <?php endif; ?>
+            <?php echo $r['name']; ?>            
+            <?php if ($this->acl['details']): ?>
+            </a>
+            <?php endif; ?>
+        </td>
+        <td style="text-align:center"><?php if ($r['inheritRoleId'] != 0) { echo $this->roles[$r['inheritRoleId']]['name']; } else { echo $this->translate("ot-acl-form:noInheritance"); } ?></td>
+    </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<?php else: ?>
+<div class="noItems">
+    <?php echo $this->translate('ot-acl-index:noRoles'); ?>
+</div>
+<?php endif; ?>

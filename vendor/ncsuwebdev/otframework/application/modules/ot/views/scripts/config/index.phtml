@@ -1,0 +1,8 @@
+<?php echo $this->translate('ot-config-index:header'); ?>
+<br /><br />
+
+<a class="btn" href="<?php echo $this->url(array('controller' => 'config', 'action' => 'export'), 'ot', true); ?>"><i class="icon icon-th"></i> Export to CSV</a>
+<a class="btn" href="<?php echo $this->url(array('controller' => 'config', 'action' => 'import'), 'ot', true); ?>"><i class="icon icon-share-alt"></i> Import from CSV</a>
+
+<br /><br />
+<?php echo $this->form; ?>
