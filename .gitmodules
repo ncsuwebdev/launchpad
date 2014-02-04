@@ -1,0 +1,3 @@
+[submodule "vendor/emagister/zend-form-decorators-bootstrap"]
+	path = vendor/emagister/zend-form-decorators-bootstrap
+	url = git@github.com:Emagister/zend-form-decorators-bootstrap.git
