@@ -1,19 +1,19 @@
 .ot-lp-app {
     float: left;
+    margin-bottom: 24px;
     text-align: center;
     width: 235px;
 }
 
-/* ALTERNATIVE APPLICATION STATUS
-.ot-lp-app2 {
-    background-color: red;
+/* ALTERNATIVE APPLICATION STATUS */
+.ot-lp-app-alt {
+    background-color: #005500;
     border-radius: 5px;
     float: left;
     padding: 10px;
     text-align: center;
     width: 235px;
 }
-*/
 
     .ot-lp-app-graphic {
         display: block;
@@ -51,3 +51,13 @@
             background-color: red;
             color: #fff;
         }
+        
+/* Add Application View */
+#ot-lp-add-app {
+    
+}
+
+    #ot-lp-add-app form label[for="adaptive"],
+    #ot-lp-add-app form input[type="checkbox"] {
+        line-height: 25px;
+    }

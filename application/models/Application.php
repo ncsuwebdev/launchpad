@@ -1,9 +1,11 @@
 <?php
 
-class App_Model_App
+class Application
 {
 	public function __construct($id=NULL)
 	{
 		
 	}
 }
+
+?>

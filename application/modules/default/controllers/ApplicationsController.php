@@ -28,7 +28,7 @@
  * @copyright  Copyright (c) 2007 NC State University Office of      
  *             Information Technology
  */
-class AppsController extends Zend_Controller_Action
+class ApplicationsController extends Zend_Controller_Action
 {
           
     /**
