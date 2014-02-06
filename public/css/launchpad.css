@@ -1,3 +1,7 @@
+#ot-lp-toolbar {
+    margin-bottom: 24px;
+}
+
 .ot-lp-app {
     float: left;
     margin-bottom: 24px;
@@ -28,8 +32,11 @@
         margin: 0;
     }
     
+    .ot-lp-app p.label {
+        font-weight: normal;
+    }
+    
     .ot-lp-app-status {
-        border-radius: 5px;
         display: inline-block;
         font-size: 0.8em;
         margin: 5px 0 0;
@@ -37,19 +44,16 @@
         text-transform: uppercase;
     }
     
-        .ot-lp-app.active .ot-lp-app-status {
-            background-color: green;
-            color: #fff;
+        .ot-lp-app.active img.ot-lp-app-status {
+            color: green;
         }
         
         .ot-lp-app.maint .ot-lp-app-status {
-            background-color: yellow;
-            color: #000;
+            color: yellow;
         }
         
         .ot-lp-app.down .ot-lp-app-status {
-            background-color: red;
-            color: #fff;
+            fill: red;
         }
         
 /* Add Application View */
